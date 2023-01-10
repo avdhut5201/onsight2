@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-01-10T18:12:14 IST" name="Suite" finished-at="2023-01-10T18:13:50 IST" duration-ms="96060">
+    <groups>
+    </groups>
+    <test started-at="2023-01-10T18:12:14 IST" name="Test" finished-at="2023-01-10T18:13:00 IST" duration-ms="45551">
+      <class name="Onsight.FrameWork.NewTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Onsight.FrameWork.NewTest@710636b0]" started-at="2023-01-10T18:12:14 IST" name="launchApplication" finished-at="2023-01-10T18:12:17 IST" duration-ms="2982" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="create_report(java.util.HashMap)[pri:0, instance:Onsight.FrameWork.NewTest@710636b0]" started-at="2023-01-10T18:12:17 IST" name="create_report" data-provider="getData" finished-at="2023-01-10T18:12:33 IST" duration-ms="15497" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Avdhut@5201, username=User66}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create_report -->
+        <test-method signature="f(java.util.HashMap)[pri:0, instance:Onsight.FrameWork.NewTest@710636b0]" started-at="2023-01-10T18:12:33 IST" name="f" data-provider="getData" finished-at="2023-01-10T18:12:55 IST" duration-ms="22230" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Avdhut@5201, username=User66}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method signature="verify_report(java.util.HashMap)[pri:0, instance:Onsight.FrameWork.NewTest@710636b0]" started-at="2023-01-10T18:12:55 IST" name="verify_report" data-provider="getData" finished-at="2023-01-10T18:12:59 IST" duration-ms="4463" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Avdhut@5201, username=User66}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_report -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Onsight.FrameWork.NewTest@710636b0]" started-at="2023-01-10T18:12:59 IST" name="tearDown" finished-at="2023-01-10T18:13:00 IST" duration-ms="98" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Onsight.FrameWork.NewTest -->
+    </test> <!-- Test -->
+    <test started-at="2023-01-10T18:13:00 IST" name="ReportViewingTest" finished-at="2023-01-10T18:13:50 IST" duration-ms="50177">
+      <class name="Onsight.FrameWork.ReportViewing">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Onsight.FrameWork.ReportViewing@126253fd]" started-at="2023-01-10T18:13:00 IST" name="launchApplication" finished-at="2023-01-10T18:13:01 IST" duration-ms="1396" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="view_report_values(java.util.HashMap)[pri:0, instance:Onsight.FrameWork.ReportViewing@126253fd]" started-at="2023-01-10T18:13:01 IST" name="view_report_values" data-provider="getData" finished-at="2023-01-10T18:13:34 IST" duration-ms="32319" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Avdhut@5201, username=User66}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //button[contains(@title,'View data')] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\avdhu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56573}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56573/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3b7882f93098e9369e302e29b69a7fb8]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //button[contains(@title,'View data')] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\avdhu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56573}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56573/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3b7882f93098e9369e302e29b69a7fb8
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at onsight2.Commonutilities.BaseComponenets.IsClickable(BaseComponenets.java:33)
+at onsight2.Pageobject.ViewRport.view_data(ViewRport.java:47)
+at Onsight.FrameWork.ReportViewing.view_report_values(ReportViewing.java:36)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- view_report_values -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Onsight.FrameWork.ReportViewing@126253fd]" started-at="2023-01-10T18:13:34 IST" name="tearDown" finished-at="2023-01-10T18:13:50 IST" duration-ms="16193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Onsight.FrameWork.ReportViewing -->
+    </test> <!-- ReportViewingTest -->
+  </suite> <!-- Suite -->
+</testng-results>
